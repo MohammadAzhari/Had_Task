@@ -1,8 +1,8 @@
-import { ILoginUser } from '../types/types'
+import { ILoginAccount } from '../types/types'
 import CrossIcon from './icons/CrossIcon'
 
 interface IProps {
-    user: ILoginUser
+    user: ILoginAccount
 }
 
 export default function UserCard({ user: { name, lastLogin, image } }: IProps) {

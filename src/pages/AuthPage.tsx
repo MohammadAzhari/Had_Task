@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import salyImg from '../assets/Saly-1.png'
-import UserCard from '../components/UserCard'
+import AccountCard from '../components/AccountCard'
 import { loginUsers } from '../data/loginUsers'
 import constants from '../utils/constants'
 import SignInForm from '../components/SignInForm'
@@ -35,11 +35,11 @@ export default function AuthPage() {
                 <p className='text-black text-base font-normal'>Login as</p>
                 <div className='mt-3 flex items-center'>
                     {loginUsers.slice(0, constants.MAXIMUM_DISPLAY_LOGIN_USERS).map((user, i) => (
-                        <UserCard key={i} user={user} />
+                        <AccountCard key={i} user={user} />
                     ))}
                 </div>
             </div>
-            {/*  */}
+            {/* white cart */}
             <div className='absolute lg:w-1/2 flex flex-col items-center w-full right-0 top-[80px] md:bg-transparent bg-primary z-10'>
                 <div className='lg:w-4/5 w-[87%] h-[741px] bg-white mb-5 text-black rounded-[40px] shadow px-[5%] py-3'>
                     {isSignInPage ? (

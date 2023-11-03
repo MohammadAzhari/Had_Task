@@ -1,4 +1,4 @@
-export interface ILoginUser {
+export interface ILoginAccount {
     name: string
     image: string
     lastLogin: string
