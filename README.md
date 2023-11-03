@@ -37,6 +37,11 @@ npm install
 npm run dev
 ```
 
+4. Visit:
+```
+http://localhost:5173/
+```
+
 This will start the development server and provide you with a local URL where you can view your application.
 
 ## Customization
